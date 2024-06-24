@@ -116,21 +116,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.from(".project-card", {
-        scrollTrigger: {
-            trigger: ".project-card",
-            start: "top 90%",
-            end: "bottom 60%",
-            scrub: true,
-        },
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.3,
-    });
-});
-
