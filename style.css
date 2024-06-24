@@ -725,3 +725,113 @@ footer {
       box-shadow: 0 0 10px #1dbf73, 0 0 20px #1dbf73, 0 0 30px #1dbf73, 0 0 40px #1dbf73;
   }
 }
+
+
+
+
+
+
+
+
+#education {
+  padding: 60px 20px;
+  background-color: #000000; /* Black background */
+  text-align: center;
+  color: #ffffff; /* White text color */
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto; /* Center timeline */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.timeline-icon {
+  width: 40px; /* Adjust size of icon container */
+  height: 40px; /* Adjust size of icon container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Icon background color */
+  border-radius: 50%;
+  margin-right: 20px;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.timeline-icon i {
+  color: #0f0; /* Icon color */
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 30px; /* Adjust position of vertical line */
+  top: 0;
+  width: 2px; /* Width of vertical line */
+  height: 100%; /* Full height of timeline item */
+  background-color: #333; /* Vertical line color */
+  z-index: -1; /* Ensure line is behind content */
+  transition: height 0.3s ease; /* Smooth transition for line height */
+}
+
+.timeline-item:first-child::before {
+  height: 50%; /* Initial height of vertical line */
+}
+
+.timeline-item:last-child::before {
+  height: 50%; /* Final height of vertical line */
+}
+
+.timeline-item:hover::before {
+  height: 100%; /* Expand line height on hover */
+}
+
+.timeline-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.timeline-item p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 0 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .timeline-item::before {
+    left: 20px; /* Adjust position of vertical line */
+    top: 20px; /* Adjust top position for better spacing */
+    height: calc(100% - 20px); /* Adjust height for better spacing */
+  }
+
+  .timeline-content {
+    text-align: left;
+  }
+}
