@@ -118,11 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const projectsContent = document.querySelector('.projects-content');
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        projectsContent.appendChild(clone);
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".project-card", {
+        scrollTrigger: {
+            trigger: ".project-card",
+            start: "top 90%",
+            end: "bottom 60%",
+            scrub: true,
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.3,
     });
 });
 
