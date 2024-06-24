@@ -44,6 +44,12 @@ section {
 .hero-content p {
   font-size: 1.5rem;
   margin-top: 10px;
+  color:#0f0;
+  animation: fadeIn 3s ease-out;
+}
+.hero-content p1 {
+  font-size: 1.2rem;
+  margin-top: 10px;
   color: #fff;
   animation: fadeIn 3s ease-out;
 }
@@ -218,22 +224,28 @@ footer {
 
 @media (max-width: 768px) {
   .hero-content h1 {
-      font-size: 2.5rem;
+      font-size: 2.1rem;
   }
 
   .hero-content p {
-      font-size: 1.2rem;
+      font-size: 1.9rem;
   }
+  .hero-content p1 {
+    font-size: 1.4rem;
+}
 }
 
 @media (max-width: 480px) {
   .hero-content h1 {
-      font-size: 2rem;
+      font-size: 1.7rem;
   }
 
   .hero-content p {
-      font-size: 1rem;
+      font-size: 1.5rem;
   }
+  .hero-content p {
+    font-size: 1.2rem;
+}
 }
 
 #skills {
@@ -505,7 +517,7 @@ footer {
 }
 
 .project-links a {
-  color: #1dbf73;
+  color: #0f0;
   text-decoration: none;
   font-size: 1.1rem;
   margin-right: 15px;
@@ -516,3 +528,28 @@ footer {
   color: #fff;
 }
 
+
+.more-projects {
+  margin-top: 40px;
+}
+
+.more-projects-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f0;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.more-projects-btn:hover {
+  background-color: #fff;
+  color: #0f0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, white, #0f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
