@@ -473,3 +473,115 @@ footer {
       padding: 0 20px;
   }
 }
+
+
+
+#projects {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projects-content {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
+
+.project-card {
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px;
+  display: inline-block;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #444;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px 0;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin: 0 20px 20px 20px;
+  color: #ccc;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 20px 0;
+}
+
+.project-links a {
+  color: #1dbf73;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #fff;
+}
+
+.project-links i {
+  margin-right: 8px;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #projects h2 {
+      font-size: 2rem;
+  }
+
+  .project-card h3 {
+      font-size: 1.25rem;
+  }
+
+  .project-card p {
+      font-size: 0.9rem;
+  }
+
+  .project-links a {
+      font-size: 1rem;
+  }
+}

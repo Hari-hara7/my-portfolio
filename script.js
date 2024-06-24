@@ -116,3 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const projectsContent = document.querySelector('.projects-content');
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        projectsContent.appendChild(clone);
+    });
+});
+
