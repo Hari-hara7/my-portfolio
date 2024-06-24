@@ -935,3 +935,51 @@ footer {
 body {
   padding-bottom: 60px; /* To avoid content being hidden behind the bottom nav */
 }
+
+
+#blog {
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+#blog h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.blog-post {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.blog-post h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #aaa;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #0f0;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
