@@ -113,6 +113,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const profileImage = document.getElementById('profile-image');
+    const socialIcons = document.getElementById('social-icons');
+
+    profileImage.addEventListener('click', () => {
+        profileImage.classList.toggle('clicked');
+        socialIcons.classList.toggle('show');
+    });
+});
 
 
 
