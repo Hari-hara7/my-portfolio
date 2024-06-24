@@ -1,0 +1,475 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#hero {
+  height: 100vh;
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #0f0;
+  animation: fadeIn 2s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #fff;
+  animation: fadeIn 3s ease-out;
+}
+
+.typewrite > .wrap {
+  border-right: 0.08em solid #fff;
+}
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 2s ease-out;
+  opacity: 1; /* Ensure it's visible */
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+#skills {
+  background-color: #000000;
+  padding: 60px 0;
+}
+
+#skills h2 {
+  color: #0f0;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill {
+  margin: 10px 0;
+  width: 80%;
+  text-align: left;
+  animation: fadeIn 2s ease-out;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-bar::before {
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #0f0;
+  width: 0;
+  transition: width 1s;
+}
+
+#education {
+  padding: 60px 0;
+}
+
+#education h2 {
+  color: #0f0;
+  animation: fadeIn 2s ease-out;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  margin: 20px 0;
+  animation: fadeIn 2s ease-out;
+}
+
+.timeline-item h3 {
+  margin: 0;
+}
+
+#projects {
+  background-color: #000000;
+  padding: 60px 0;
+}
+
+#projects h2 {
+  color: #0f0;
+  animation: fadeIn 2s ease-out;
+}
+
+.projects-content {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 0 10px;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+  scroll-snap-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#contact {
+  padding: 60px 0;
+}
+
+#contact h2 {
+  color: #0f0;
+  animation: fadeIn 2s ease-out;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form input, #contact form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+  background-color: #0c0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: #0f0;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  padding: 20px;
+  background-color: #000000;
+  text-align: center;
+  color: #0f0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero-content p {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 2rem;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+  }
+}
+
+#skills {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #111;
+  color: #0f0;
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between skill items */
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px; /* Adjust width of each skill item */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust background color or remove */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3); /* Add box shadow for better visibility */
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05); /* Add hover effect */
+}
+
+.skill i {
+  font-size: 3rem;
+  color: #0f0;
+}
+
+.skill span {
+  font-size: 1.5rem;
+  margin-left: 10px; /* Adjust spacing between icon and text */
+}
+
+.progress-bar {
+  flex: 1; /* Allow progress bar to expand within the skill item */
+  height: 10px;
+  background-color: #0f0;
+  margin-left: 10px; /* Adjust spacing between text and progress bar */
+}
+
+@media (max-width: 768px) {
+  .skill {
+      width: calc(33.33% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .skill i {
+      font-size: 2.5rem;
+  }
+
+  .skill span {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill {
+      width: calc(50% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .skill i {
+      font-size: 2rem;
+  }
+
+  .skill span {
+      font-size: 1rem;
+  }
+}
+
+
+
+#about {
+  padding: 60px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-content img {
+  max-width: 300px;
+  border-radius: 50%;
+  margin-right: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* White shadow for contrast */
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-content img {
+      margin-bottom: 20px;
+      margin-right: 0;
+  }
+}
+
+
+#education {
+  padding: 60px 20px;
+  background-color: #000000; /* Light gray background */
+  text-align: center;
+  color: #ffffff; /* Dark text color */
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto; /* Center timeline */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.timeline-icon {
+  width: 40px; /* Adjust size of icon container */
+  height: 40px; /* Adjust size of icon container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; /* Icon background color */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.timeline-icon i {
+  color: #fff; /* Icon color */
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 20px; /* Adjust position of vertical line */
+  top: 0;
+  width: 2px; /* Width of vertical line */
+  height: 100%; /* Full height of timeline item */
+  background-color: #333; /* Vertical line color */
+  z-index: -1; /* Ensure line is behind content */
+  transition: height 0.3s ease; /* Smooth transition for line height */
+}
+
+.timeline-item:first-child::before {
+  height: 50%; /* Initial height of vertical line */
+}
+
+.timeline-item:last-child::before {
+  height: 50%; /* Final height of vertical line */
+}
+
+.timeline-item:hover::before {
+  height: 100%; /* Expand line height on hover */
+}
+
+.timeline-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.timeline-item p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+      padding: 0 20px;
+  }
+}
