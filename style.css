@@ -996,3 +996,46 @@ body {
       padding: 40px 10px;
   }
 }
+
+
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px; /* Adjust height as needed */
+}
+
+.parallax.hero {
+  background-image: url('path/to/your/image.jpg');
+}
+
+.parallax.about {
+  background-image: url('Designer - 2024-06-24T113344.440.jpeg');
+}
+
+.parallax.skills {
+  background-image: url('path/to/your/image.jpg');
+}
+
+.parallax.education {
+  background-image: url('path/to/your/image.jpg');
+}
+
+.parallax.projects {
+  background-image: url('path/to/your/image.jpg');
+}
+
+.parallax.blog {
+  background-image: url('path/to/your/image.jpg');
+}
+
+.parallax.contact {
+  background-image: url('path/to/your/image.jpg');
+}
+
+
+.about-text {
+  color: #ffffff; /* Set text color to black */
+}
