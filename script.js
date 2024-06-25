@@ -125,3 +125,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
+  document.addEventListener('DOMContentLoaded', () => {
+    // Ask for user's name using prompt
+    let userName = prompt('Please enter your name💚:');
+    if (!userName) {
+        userName = 'Guest'; // Default to 'Guest' if no name entered
+    }
+
+    // Update welcome message with user's name
+    const welcomeMessage = document.querySelector('#hero .hero-content .gradient-text');
+    welcomeMessage.textContent = `Welcome to My Portfolio, ${userName}`;
+
+    // Update portfolio information with user's name
+    const portfolioInfo = document.querySelector('#hero .hero-content p');
+    portfolioInfo.textContent = `I'm ${userName}, a web developer passionate about creating interactive and visually appealing websites.`;
+});
+

@@ -1063,3 +1063,57 @@ h1 {
     margin-top: 20px;
     color: #333;
 }
+
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply styles to the hero section */
+#hero {
+  height: 150vh; /* Set height to cover the entire viewport */
+  background-color: #000000; /* Adjust background color as needed */
+  background-image: url('your-background-image.jpg'); /* Add a background image if desired */
+  background-size: cover; /* Cover the entire section with the background image */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff; /* Adjust text color */
+}
+
+/* Style for the hero content */
+.hero-content {
+  max-width: 800px; /* Adjust maximum width as per your design */
+}
+
+/* Additional styles for text and elements inside hero section */
+.gradient-text {
+  font-size: 3rem; /* Adjust font size */
+  margin-bottom: 20px;
+}
+
+#portfolio-info {
+  font-size: 1.2rem; /* Adjust font size */
+  line-height: 1.6; /* Adjust line height */
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ffffff; /* Adjust icon color */
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+.social-icon:hover {
+  color: #ffd700; /* Adjust hover color for icons */
+}
