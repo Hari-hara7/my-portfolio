@@ -937,9 +937,10 @@ body {
 }
 
 
+/* Blog Section */
 #blog {
   padding: 60px 20px;
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
 }
 
@@ -953,7 +954,8 @@ body {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 8px;
-  background-color: #333;
+  background-color: #111; /* Slightly lighter than black for contrast */
+  border-left: 4px solid #0f0; /* Green border on the left */
 }
 
 .blog-post h3 {
@@ -964,7 +966,7 @@ body {
 .blog-meta {
   font-size: 0.9rem;
   margin-bottom: 15px;
-  color: #aaa;
+  color: #aaa; /* Light gray color */
 }
 
 .blog-post p {
@@ -982,4 +984,15 @@ body {
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .bottom-nav .nav-item span {
+      display: none; /* Hide text on smaller screens */
+  }
+
+  #blog {
+      padding: 40px 10px;
+  }
 }
