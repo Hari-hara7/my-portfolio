@@ -1039,3 +1039,27 @@ body {
 .about-text {
   color: #ffffff; /* Set text color to black */
 }
+
+
+   /* CSS for iframe container */
+   .spotify-iframe-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center align on the page */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Hide any overflow content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* Responsive iframe */
+.spotify-iframe-container iframe {
+    width: 100%;
+    height: 352px; /* Adjust the height based on your design */
+    border: none; /* Remove default iframe border */
+}
+
+/* Optional: Add styling for the heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
