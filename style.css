@@ -42,7 +42,7 @@ section {
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-top: 10px;
   color:#0f0;
   animation: fadeIn 3s ease-out;
@@ -228,7 +228,7 @@ footer {
   }
 
   .hero-content p {
-      font-size: 1.9rem;
+      font-size: 2.1rem;
   }
   .hero-content p1 {
     font-size: 1.4rem;
@@ -243,7 +243,7 @@ footer {
   .hero-content p {
       font-size: 1.5rem;
   }
-  .hero-content p {
+  .hero-content p1 {
     font-size: 1.2rem;
 }
 }
