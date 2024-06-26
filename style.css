@@ -1199,3 +1199,49 @@ h1 {
       padding: 8px 10px;
   }
 }
+
+
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  background-color: #000; /* Black background */
+  padding: 20px 0; /* Optional padding for better presentation */
+}
+
+.logo-track {
+  display: flex;
+  width: calc(200%); /* Ensures the track is twice the width for infinite effect */
+  animation: scroll 20s linear infinite; /* Adjust the duration for speed */
+}
+
+.logo-item {
+  flex: 1 0 25%; /* Four logos fitting the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-item img {
+  max-width: 25%;
+  height: auto;
+  border: 2px solid #000000; /* Green border around logos */
+  border-radius: 8px; /* Optional: Adds rounded corners to logos */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+@media (max-width: 480px) {
+  
+  .logo-item img {
+    max-width: 50%; /* Increase the size of the logos on mobile */
+  }
+
+  
+}

@@ -141,3 +141,18 @@ document.addEventListener('DOMContentLoaded', () => {
     portfolioInfo.textContent = `I'm ${userName}, a web developer passionate about creating interactive and visually appealing websites.`;
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    function adjustAnimationSpeed() {
+        const track = document.querySelector('.logo-track');
+        if (window.innerWidth <= 480) {
+            track.style.animation = 'scroll 10s linear infinite'; // Faster on mobile
+        } else {
+            track.style.animation = 'scroll 20s linear infinite'; // Default speed
+        }
+    }
+
+    adjustAnimationSpeed();
+    window.addEventListener('resize', adjustAnimationSpeed);
+});
+
