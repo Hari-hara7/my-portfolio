@@ -632,7 +632,7 @@ footer {
 }
 
 .social-icon:nth-child(1) {
-  top: -160px;
+  top: -190px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
