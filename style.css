@@ -1,9 +1,13 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #000;
+ 
   color: #fff;
   overflow-x: hidden;
+  background-image: url('25336.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 section {
@@ -40,7 +44,7 @@ section {
 
 #hero {
   height: 100vh;
-  background: url('hero-bg.jpg') no-repeat center center/cover;
+  background: url('25336.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1033,11 +1037,11 @@ body {
 }
 
 .parallax.hero {
-  background-image: url('bat.jpeg');
+  background-image: url('25336.jpg');
 }
 
 .parallax.about {
-  background-image: url('bat.jpeg');
+  background-image: url('25336.jpg');
 }
 
 .parallax.skills {
